@@ -77,11 +77,15 @@ function history() {
     const historyBox = document.getElementById("historyBox");
     listOfObjects.forEach((searches)=>{
         historyBox.innerHTML += `<ul>Your Searches</ul>`
-        document.querySelector("ul").innerHTML += `<li>${searches}    <button id = "${searches}">delete</button></li>`
-            
+        document.querySelector("ul").innerHTML += `<li>${searches}    <button id = "${searches}">delete</button></li>`}
+    )
+    listOfObjects.forEach((searches)=>{
         document.getElementById(searches).addEventListener("click", ()=>{deleteHistory(searches)
-        document.querySelector('ul').innerHTML -=`<li>${searches} <button id = "${searches}">delete</button></li>`})
-        })
+            document.querySelector("ul").innerHTML = `<li></li>`;
+            document.querySelector('ul').innerHTML +=`<li>${searches} <button id = "${searches}">delete</button></li>`});})
+        
+        //document.querySelector('ul').innerHTML -=`<li>${searches} <button id = "${searches}">delete</button></li>`})
+        
         
     }
     
