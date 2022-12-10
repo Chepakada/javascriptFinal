@@ -1,7 +1,7 @@
 import {addToList, removeFromList, listOfObjects} from "./list_changer.js";
 
 
-const backgroundImage = "../images/bclowopacity.jpg";
+const backgroundImage = "./images/bclowopacity.jpg";
 const backgroundImageUrl = "https://whvn.cc/kx79md";
 async function getBackgroundImage(backgroundImageUrl){
     image = await fetch(backgroundImageUrl, {
