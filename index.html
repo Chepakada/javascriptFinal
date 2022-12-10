@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Here is Your Food</title>
+</head>
+<body>
+    <div id = "main_grid">
+    <h1 id = "title">What food is in your mind?</h1>
+    <h3 id = "subtext">Here, you will find all sorts of food. Ready to find out?</h3>
+    </div>
+    <main>
+        <div id = "picture_puller"><p id = "subtext">Click the button below and get your food picture.</p>
+        <button id = "foodButton">Get Your Food</button></div>
+        <section id = "pictureCollector"></section>
+        <div id = "randomMessages"></div>
+        <section id = "searchEngine"> 
+            <label for="searchbar" class = "input">Search here</label>
+            <input type ="text" id = "inputBox" class="input" placeholder="Type here">
+            <button class = "input" id = "searchButton">Search</button>
+        </section>
+        <div id = "historyBox"><p>If you want to see your search history, press the button below, use delete button on side to remove form history.</p>
+        <button class = "input" id="printList">Print List</button></div>
+        
+    </main>
+    <script src = "scripts/main.js" type = "module"></script>
+    <!-- <script type = "module" src="scripts/list_changer.js"></script>     -->
+</body>
+</html>
